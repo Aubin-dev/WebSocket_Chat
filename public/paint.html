@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="css/paint.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/paint.js"></script>
+    <script src="js/drawingtools.js"></script>
+    <script src="js/jscolor/jscolor.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            paint = new PaintObject("canvasMain");
+            paint.bindMultiplexEvents();
+        });
+    </script>
+</head>
+<body>
+<div id="home">
+    <div id="content">
+        <div id="divCanvas">
+            <canvas id="canvasMain">
+                <p>Canvas tag not supported by your browser</p>
+            </canvas>
+        </div>
+
+    </div>
+    <div id="righColumn">
+        <!-- <div id="text">
+            <h4>Canvas Paint, version 6</h4>
+            <p>
+                Added some of the new html 5 input type elements (color and range).
+                <br/>
+                Note that the input of type=color only works in Opera, while the input of type=range works in Opera and Chrome.
+                <br/>
+                So far, Firefox does not support any of them.
+                <br/>
+                If you are running opera, look at the paint.html file, you may uncomment the input type=color and try it.
+            </p>
+        </div> -->
+        <div id="drawCommands">
+            <h6>Choisir un outil</h6>
+            <span id="line">trait</span>
+            <span id="pencil">crayon</span>
+            <span id="rectangle">rectangle</span>
+            <span id="circle">cercle</span>
+            <button id="reset-canvas"><i class="fas fa-eraser"></i></button>
+            
+            <ul>
+                <li>
+                    Couleur de remplissage:
+                    <input id="fillColor" class="color" value="FFFFFF"/>
+                </li>
+                <li>
+                    Couleur de contour:
+                    <input id="strokeColor" class="color" value="000000"/>
+                </li>
+                <li>
+                    Taille du contour: 
+                    <input id="strokeSize" type="range" min="0" max="20" value="1" step="0.5" style="position:relative;top:6px;"/>
+                </li>
+                <li>
+                    Forme de remplissage : <input id="fillShapes" type="checkbox" checked/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
