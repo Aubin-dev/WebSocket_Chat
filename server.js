@@ -14,10 +14,12 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
-const botName = 'Chat Bot';
+const botName = 'Server';
 
 // Run when client connects
 io.on('connection', socket => {
@@ -27,14 +29,14 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+    socket.emit('message', formatMessage(botName, 'Bienvenue au Chat!'));
 
     // Broadcast when a user connects
     socket.broadcast
       .to(user.room)
       .emit(
         'message',
-        formatMessage(botName, `${user.username} has joined the chat`)
+        formatMessage(botName, `${user.username} a rejoint le chat`)
       );
 
     // Send users and room info
@@ -58,7 +60,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `${user.username} s'est déconnecté`)
       );
 
       // Send users and room info

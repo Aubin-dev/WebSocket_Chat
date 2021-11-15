@@ -113,5 +113,34 @@ function PaintObject(maincvs) {
         mainContext.drawImage(frontCanvas, 0, 0);
         frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
     }
+
+    
+    this.processPaintCommand = function (paintCommand) {  
+         
+   
+         switch (paintCommand.type) {  
+               
+             case 'webcamMove' :  
+                 // clear the content of the front canvas  
+                 frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);  
+                 // build a temporary image of the right size  
+                 var img = new Image();  
+                 img.width = paintCommand.width;  
+                 img.height = paintCommand.height;  
+   
+                 // Listener called when the image is ready to be drawn  
+                 img.onload = function () {  
+                     // draw the received picture  
+                     frontContext.drawImage(img, paintCommand.x, paintCommand.y);  
+                 };  
+   
+                 // will call the onload listener  
+                 img.src = paintCommand.imageData;  
+                 break;  
+              
+         }  
+   
+          
+ };
 };
 //Effacer le canvas

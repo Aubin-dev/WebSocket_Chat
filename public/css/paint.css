@@ -6,6 +6,11 @@ body {
   font-family: "Trebuchet MS", sans-serif;
 }
 
+#home{
+  width: 700px;
+  height: 80%;
+}
+
 h1,
 h2,
 h3,
@@ -65,7 +70,6 @@ div#righColumn {
   top: 0;
 
   display: block;
-
   height: 100%;
   width: 25%;
   min-width: 200px;

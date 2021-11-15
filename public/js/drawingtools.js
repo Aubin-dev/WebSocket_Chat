@@ -127,5 +127,53 @@ setOfDrawingTools.circle = function() {
 };
 
 
+setOfDrawingTools.webcam = function() {  
+    var mousePos, previousMousePos, x, y;  
+    // ref to the video element that displays webcam real time content  
+    var video =document.getElementById('output');  
+    
+  
+    this.mousedown = function (event) {  
+        previousMousePos = getMousePos(paint.getFrontCanvas(), event);  
+        paint.started = true;  
+    }  
+  
+    this.mousemove = function (event) {  
+        mousePos = getMousePos(paint.getFrontCanvas(), event);  
+        // Draw only if we clicked somewhere  
+        if (paint.started) {  
+            // clear the content of the front canvas  
+            paint.getFrontContext().clearRect(0, 0, paint.getFrontCanvas().width,   
+                                              paint.getFrontCanvas().height);  
+  
+            // Size and pos of the elastic rectangle with video snapshot inside  
+            var imageProperties = computeProperties(previousMousePos, mousePos);  
+  
+            // Draw video content on front canvas  
+            paint.getFrontContext().drawImage(video,imageProperties.x,imageProperties.y,   
+                  imageProperties.width,imageProperties.height);  
+        }  
+    }  
+  
+    // Compute the coordinates of the top left corner and the size of the image drawn.  
+    function computeProperties(previousMousePos, mousePos){  
+        var properties = {};  
+        properties.x = Math.min(previousMousePos.x, mousePos.x);  
+        properties.y = Math.min(previousMousePos.y, mousePos.y);  
+        properties.width = Math.abs(previousMousePos.x - mousePos.x);  
+        properties.height = Math.abs(previousMousePos.y - mousePos.y);  
+        return properties;  
+    }  
+  
+    
+  
+    this.mouseup = function (event) {  
+        paint.started = false;  
+        paint.drawFrontCanvasOnMainCanvas();  
+        
+    }  
+};  
+
+
 
 

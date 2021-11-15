@@ -13,36 +13,32 @@
     <script src="js/paint.js"></script>
     <script src="js/drawingtools.js"></script>
     <script src="js/jscolor/jscolor.js"></script>
+    <script src="js/webcam.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             paint = new PaintObject("canvasMain");
             paint.bindMultiplexEvents();
         });
+        // Run when the DOM is ready  
+        $(document).ready(function () {   
+            // init web cam, works only in last test versions of chrome and opera.  
+            initWebCam();  
+        });  
     </script>
 </head>
 <body>
+      
 <div id="home">
     <div id="content">
         <div id="divCanvas">
             <canvas id="canvasMain">
                 <p>Canvas tag not supported by your browser</p>
-            </canvas>
-        </div>
-
+            </canvas>    
+        </div>       
     </div>
     <div id="righColumn">
-        <!-- <div id="text">
-            <h4>Canvas Paint, version 6</h4>
-            <p>
-                Added some of the new html 5 input type elements (color and range).
-                <br/>
-                Note that the input of type=color only works in Opera, while the input of type=range works in Opera and Chrome.
-                <br/>
-                So far, Firefox does not support any of them.
-                <br/>
-                If you are running opera, look at the paint.html file, you may uncomment the input type=color and try it.
-            </p>
-        </div> -->
+        <button>Enregistrer</button>
+        <button>Retour</button>
         <div id="drawCommands">
             <h6>Choisir un outil</h6>
             <span id="line">trait</span>

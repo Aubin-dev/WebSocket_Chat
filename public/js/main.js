@@ -2,6 +2,21 @@ const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const userList = document.getElementById('users');
+// const uploadImage=require('../helpers/uploadImage');
+
+
+document.getElementById('palette').addEventListener('click',()=>{
+  window.location = '../paint.html';
+})
+document.querySelector('.joinicone').addEventListener('click',()=>{
+  const joinicone=document.querySelector('.joinicone');
+  if(joinicone){
+    
+  }
+  
+})
+
+
 
 // Get username and room from URL
 const { username, room } = Qs.parse(location.search, {
