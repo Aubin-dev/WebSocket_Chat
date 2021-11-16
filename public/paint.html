@@ -11,19 +11,18 @@
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/paint.js"></script>
+    <script src="js/webcam.js"></script>
     <script src="js/drawingtools.js"></script>
     <script src="js/jscolor/jscolor.js"></script>
-    <script src="js/webcam.js"></script>
+    <!-- <script src="js/webcam.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function () {
             paint = new PaintObject("canvasMain");
             paint.bindMultiplexEvents();
+            initWebCam();
         });
         // Run when the DOM is ready  
-        $(document).ready(function () {   
-            // init web cam, works only in last test versions of chrome and opera.  
-            initWebCam();  
-        });  
+
     </script>
 </head>
 <body>
@@ -38,14 +37,15 @@
     </div>
     <div id="righColumn">
         <button>Enregistrer</button>
-        <button>Retour</button>
+        <button id="effacer">Effacer</button>
         <div id="drawCommands">
             <h6>Choisir un outil</h6>
             <span id="line">trait</span>
             <span id="pencil">crayon</span>
             <span id="rectangle">rectangle</span>
             <span id="circle">cercle</span>
-            <button id="reset-canvas"><i class="fas fa-eraser"></i></button>
+            <span id="webcam">webcam</span>
+            
             
             <ul>
                 <li>
@@ -65,6 +65,10 @@
                 </li>
             </ul>
         </div>
+        <!-- <div id="webcamDiv">
+            <h4>Simple web camera display</h4>
+            <video id="output" width="195" height="195" autoplay>Put your fallback message here.</video>
+        </div> -->
     </div>
 </div>
 </body>

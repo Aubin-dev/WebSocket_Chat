@@ -3,6 +3,8 @@ var setOfDrawingTools = new Array();
 // Position précédente de la souris
 var previousMousePos;
 
+
+
 // Objet Outil dessin au crayon.
 setOfDrawingTools.pencil = function () {
     this.mousedown = function (event) {
@@ -165,15 +167,9 @@ setOfDrawingTools.webcam = function() {
         return properties;  
     }  
   
-    
-  
     this.mouseup = function (event) {  
         paint.started = false;  
-        paint.drawFrontCanvasOnMainCanvas();  
-        
+        paint.drawFrontCanvasOnMainCanvas();     
     }  
 };  
-
-
-
 

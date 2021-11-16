@@ -1,0 +1,247 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'n@latest' ]
+2 info using npm@1.2.10
+3 info using node@v0.8.19
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose read json C:\Users\LENOVO\Desktop\WebSocket\package.json
+6 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\abbrev\package.json
+7 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\accepts\package.json
+8 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\after\package.json
+9 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ansi-align\package.json
+10 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ansi-regex\package.json
+11 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ansi-styles\package.json
+12 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\anymatch\package.json
+13 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\append-field\package.json
+14 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\array-flatten\package.json
+15 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\arraybuffer.slice\package.json
+16 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\backo2\package.json
+17 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\balanced-match\package.json
+18 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\base64-arraybuffer\package.json
+19 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\base64id\package.json
+20 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\binary-extensions\package.json
+21 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\blob\package.json
+22 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\body-parser\package.json
+23 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\boxen\package.json
+24 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\brace-expansion\package.json
+25 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\braces\package.json
+26 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\buffer-from\package.json
+27 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\busboy\package.json
+28 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\bytes\package.json
+29 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\camelcase\package.json
+30 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\capture-stack-trace\package.json
+31 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\chalk\package.json
+32 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\chokidar\package.json
+33 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ci-info\package.json
+34 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\cli-boxes\package.json
+35 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\color-convert\package.json
+36 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\color-name\package.json
+37 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\component-bind\package.json
+38 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\component-emitter\package.json
+39 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\component-inherit\package.json
+40 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\concat-map\package.json
+41 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\concat-stream\package.json
+42 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\configstore\package.json
+43 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\content-disposition\package.json
+44 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\content-type\package.json
+45 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\cookie\package.json
+46 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\cookie-signature\package.json
+47 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\core-util-is\package.json
+48 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\create-error-class\package.json
+49 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\cross-spawn\package.json
+50 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\crypto-random-string\package.json
+51 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\debug\package.json
+52 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\deep-extend\package.json
+53 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\depd\package.json
+54 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\destroy\package.json
+55 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\dicer\package.json
+56 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\dot-prop\package.json
+57 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\duplexer3\package.json
+58 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ee-first\package.json
+59 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\encodeurl\package.json
+60 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\engine.io\package.json
+61 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\engine.io-client\package.json
+62 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\engine.io-parser\package.json
+63 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\escape-html\package.json
+64 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\escape-string-regexp\package.json
+65 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\etag\package.json
+66 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\execa\package.json
+67 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\express\package.json
+68 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\fill-range\package.json
+69 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\finalhandler\package.json
+70 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\forwarded\package.json
+71 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\fresh\package.json
+72 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\get-stream\package.json
+73 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\glob-parent\package.json
+74 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\global-dirs\package.json
+75 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\got\package.json
+76 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\graceful-fs\package.json
+77 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\has-binary2\package.json
+78 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\has-cors\package.json
+79 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\has-flag\package.json
+80 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\http-errors\package.json
+81 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\iconv-lite\package.json
+82 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ignore-by-default\package.json
+83 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\import-lazy\package.json
+84 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\imurmurhash\package.json
+85 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\indexof\package.json
+86 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\inherits\package.json
+87 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ini\package.json
+88 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ipaddr.js\package.json
+89 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-binary-path\package.json
+90 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-ci\package.json
+91 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-extglob\package.json
+92 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-fullwidth-code-point\package.json
+93 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-glob\package.json
+94 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-installed-globally\package.json
+95 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-npm\package.json
+96 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-number\package.json
+97 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-obj\package.json
+98 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-path-inside\package.json
+99 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-redirect\package.json
+100 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-retry-allowed\package.json
+101 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\is-stream\package.json
+102 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\isarray\package.json
+103 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\isexe\package.json
+104 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\latest-version\package.json
+105 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\lowercase-keys\package.json
+106 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\lru-cache\package.json
+107 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\make-dir\package.json
+108 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\media-typer\package.json
+109 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\merge-descriptors\package.json
+110 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\methods\package.json
+111 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\mime\package.json
+112 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\mime-db\package.json
+113 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\mime-types\package.json
+114 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\minimatch\package.json
+115 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\minimist\package.json
+116 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\mkdirp\package.json
+117 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\moment\package.json
+118 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ms\package.json
+119 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\multer\package.json
+120 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\negotiator\package.json
+121 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\nodemon\package.json
+122 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\nopt\package.json
+123 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\normalize-path\package.json
+124 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\npm-run-path\package.json
+125 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\object-assign\package.json
+126 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\on-finished\package.json
+127 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\p-finally\package.json
+128 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\package-json\package.json
+129 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\parseqs\package.json
+130 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\parseuri\package.json
+131 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\parseurl\package.json
+132 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\path-is-inside\package.json
+133 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\path-key\package.json
+134 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\path-to-regexp\package.json
+135 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\picomatch\package.json
+136 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\pify\package.json
+137 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\prepend-http\package.json
+138 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\process-nextick-args\package.json
+139 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\proxy-addr\package.json
+140 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\pseudomap\package.json
+141 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\pstree.remy\package.json
+142 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\qs\package.json
+143 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\range-parser\package.json
+144 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\raw-body\package.json
+145 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\rc\package.json
+146 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\readable-stream\package.json
+147 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\readdirp\package.json
+148 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\registry-auth-token\package.json
+149 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\registry-url\package.json
+150 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\safe-buffer\package.json
+151 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\safer-buffer\package.json
+152 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\semver\package.json
+153 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\semver-diff\package.json
+154 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\send\package.json
+155 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\serve-static\package.json
+156 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\setprototypeof\package.json
+157 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\shebang-command\package.json
+158 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\shebang-regex\package.json
+159 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\signal-exit\package.json
+160 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\socket.io\package.json
+161 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\socket.io-adapter\package.json
+162 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\socket.io-client\package.json
+163 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\socket.io-parser\package.json
+164 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\statuses\package.json
+165 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\streamsearch\package.json
+166 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\string-width\package.json
+167 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\string_decoder\package.json
+168 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\strip-ansi\package.json
+169 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\strip-eof\package.json
+170 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\strip-json-comments\package.json
+171 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\supports-color\package.json
+172 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\term-size\package.json
+173 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\timed-out\package.json
+174 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\to-array\package.json
+175 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\to-regex-range\package.json
+176 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\toidentifier\package.json
+177 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\touch\package.json
+178 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\type-is\package.json
+179 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\typedarray\package.json
+180 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\undefsafe\package.json
+181 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\unique-string\package.json
+182 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\unpipe\package.json
+183 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\unzip-response\package.json
+184 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\update-notifier\package.json
+185 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\url-parse-lax\package.json
+186 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\util-deprecate\package.json
+187 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\utils-merge\package.json
+188 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\vary\package.json
+189 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\which\package.json
+190 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\widest-line\package.json
+191 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\write-file-atomic\package.json
+192 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\ws\package.json
+193 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\xdg-basedir\package.json
+194 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\xmlhttprequest-ssl\package.json
+195 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\xtend\package.json
+196 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\yallist\package.json
+197 verbose read json C:\Users\LENOVO\Desktop\WebSocket\node_modules\yeast\package.json
+198 warn package.json path-is-inside@1.0.2 No README.md file found!
+199 warn package.json pstree.remy@1.1.7 No README.md file found!
+200 verbose from cache C:\Users\LENOVO\Desktop\WebSocket\package.json
+201 verbose readDependencies using package.json deps
+202 verbose cache add [ 'n@latest', null ]
+203 verbose cache add name=undefined spec="n@latest" args=["n@latest",null]
+204 verbose parsed url { pathname: 'n@latest', path: 'n@latest', href: 'n@latest' }
+205 verbose cache add name="n" spec="latest" args=["n","latest"]
+206 verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+207 verbose addNamed [ 'n', 'latest' ]
+208 verbose addNamed [ null, null ]
+209 silly lockFile ae4379bb-n-latest n@latest
+210 verbose lock n@latest C:\Users\LENOVO\AppData\Roaming\npm-cache\ae4379bb-n-latest.lock
+211 info addNameTag [ 'n', 'latest' ]
+212 verbose url raw n
+213 verbose url resolving [ 'https://registry.npmjs.org/', './n' ]
+214 verbose url resolved https://registry.npmjs.org/n
+215 info trying registry request attempt 1 at 00:34:33
+216 http GET https://registry.npmjs.org/n
+217 info retry will retry, error on last attempt: Error: 16580:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+218 info trying registry request attempt 2 at 00:34:44
+219 http GET https://registry.npmjs.org/n
+220 info retry will retry, error on last attempt: Error: 16580:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+221 info trying registry request attempt 3 at 00:35:44
+222 http GET https://registry.npmjs.org/n
+223 silly lockFile ae4379bb-n-latest n@latest
+224 silly lockFile ae4379bb-n-latest n@latest
+225 error Error: 16580:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+225 error
+225 error     at CleartextStream._puller (tls.js:667:24)
+225 error     at CleartextStream.CryptoStream._pull (tls.js:601:19)
+225 error     at SecurePair.cycle (tls.js:891:20)
+225 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+225 error     at Socket.ondata (stream.js:38:26)
+225 error     at Socket.EventEmitter.emit (events.js:96:17)
+225 error     at TCP.onread (net.js:397:14)
+226 error If you need help, you may report this log at:
+226 error     <http://github.com/isaacs/npm/issues>
+226 error or email it to:
+226 error     <npm-@googlegroups.com>
+227 error System Windows_NT 6.2.9200
+228 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "n@latest"
+229 error cwd C:\Users\LENOVO\Desktop\WebSocket
+230 error node -v v0.8.19
+231 error npm -v 1.2.10
+232 verbose exit [ 1, true ]

@@ -114,33 +114,90 @@ function PaintObject(maincvs) {
         frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
     }
 
+
+    this.processPaintCommand = function (paintCommand) {
+        // save contexts on a stack, method provided by the canvas API
+        mainContext.save();
+        frontContext.save();
+        // change contexts so that they are like sender contexts
+        this.changeContextsProperties(paintCommand.properties);
+
+        switch (paintCommand.type) {
+            case 'pencilMove' :
+                mainContext.beginPath();
+                mainContext.moveTo(paintCommand.previousMousePos.x, paintCommand.previousMousePos.y);
+                mainContext.lineTo(paintCommand.currentMousePos.x, paintCommand.currentMousePos.y);
+                mainContext.closePath();
+                mainContext.stroke();
+                break;
+            case 'lineMove' :
+                // clear the content of the front canvas
+                frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
+                frontContext.beginPath();
+                frontContext.moveTo(paintCommand.previousMousePos.x, paintCommand.previousMousePos.y);
+                frontContext.lineTo(paintCommand.currentMousePos.x, paintCommand.currentMousePos.y);
+                frontContext.stroke();
+                frontContext.closePath();
+                break;
+            case 'rectangleMove' :
+                // clear the content of the front canvas
+                frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
+                if (paintCommand.fill) {
+                    frontContext.fillRect(paintCommand.x, paintCommand.y, paintCommand.width, paintCommand.height);
+                }
+                frontContext.strokeRect(paintCommand.x, paintCommand.y, paintCommand.width, paintCommand.height);
+                break;
+            case 'circleMove' :
+                // clear the content of the front canvas
+                frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
+
+                var x = paintCommand.x;
+                var y = paintCommand.y;
+                var radius = paintCommand.radius;
+                frontContext.beginPath();
+                frontContext.arc(x, y, radius, 0, 2 * Math.PI, false);
+                frontContext.closePath();
+                if (paintCommand.fill) {
+                    frontContext.fill();
+                }
+                frontContext.stroke();
+                break;
+            case 'webcamMove' :
+                // clear the content of the front canvas
+                frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);
+                var img = new Image();
+                img.width = paintCommand.width;
+                img.height = paintCommand.height;
+                img.onload = function () {
+                    frontContext.drawImage(img, paintCommand.x, paintCommand.y);
+                };
+                img.src = paintCommand.imageData;
+                break;
+            case 'drawFrontCanvasOnMainCanvas' :
+                this.drawFrontCanvasOnMainCanvas();
+                break;
+        }
+
+        // restore contexts, current color, etc.
+        mainContext.restore();
+        frontContext.restore();
+
+    };
     
-    this.processPaintCommand = function (paintCommand) {  
-         
-   
-         switch (paintCommand.type) {  
-               
-             case 'webcamMove' :  
-                 // clear the content of the front canvas  
-                 frontContext.clearRect(0, 0, frontCanvas.width, frontCanvas.height);  
-                 // build a temporary image of the right size  
-                 var img = new Image();  
-                 img.width = paintCommand.width;  
-                 img.height = paintCommand.height;  
-   
-                 // Listener called when the image is ready to be drawn  
-                 img.onload = function () {  
-                     // draw the received picture  
-                     frontContext.drawImage(img, paintCommand.x, paintCommand.y);  
-                 };  
-   
-                 // will call the onload listener  
-                 img.src = paintCommand.imageData;  
-                 break;  
-              
-         }  
-   
-          
- };
+    this.getCurrentContextProperties = function () {
+        var properties = {};
+        properties.strokeStyle = mainContext.strokeStyle;
+        properties.fillStyle = mainContext.fillStyle;
+        properties.lineWidth = mainContext.lineWidth;
+        return properties;
+    };
+
+
+    this.changeContextsProperties = function (senderContextProperties) {
+        // set current contexts to the sender context in order to draw with same colors, etc.
+        for (var prop in senderContextProperties) {
+            mainContext[prop] = frontContext[prop] = senderContextProperties[prop];
+        }
+    }
 };
 //Effacer le canvas

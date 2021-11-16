@@ -70,8 +70,24 @@ io.on('connection', socket => {
       });
     }
   });
+  socket.on('mouse',
+  function(data) {
+  // Data comes in as whatever was sent, including objects
+  console.log("Received: 'mouse' " + data.x + " " + data.y);
+
+  // Send it to all other clients
+  socket.broadcast.emit('mouse', data);
+  
+  // This is a way to send to everyone including sender
+  // io.sockets.emit('message', "this goes to everyone");
+  
+})
+
 });
 
-const PORT = process.env.PORT || 3000;
+
+
+
+const PORT = process.env.PORT || 4000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
